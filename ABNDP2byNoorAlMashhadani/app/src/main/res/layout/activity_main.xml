@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/game_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_name" />
+
+        <TextView
+            style="@style/game_description_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_description" />
+
+        <View
+            style="@style/dividing_lines_style"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/players_names_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player1" />
+
+                <TextView
+                    android:id="@+id/player_1_score"
+                    style="@style/players_scores_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player_score" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add1Point_Player1"
+                    android:text="@string/add_one_point" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add2Points_Player1"
+                    android:text="@string/add_two_points" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add3Points_Player1"
+                    android:text="@string/add_three_points" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/players_names_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player2" />
+
+                <TextView
+                    android:id="@+id/player_2_score"
+                    style="@style/players_scores_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player_score" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add1Point_Player2"
+                    android:text="@string/add_one_point" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add2Points_Player2"
+                    android:text="@string/add_two_points" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add3Points_Player2"
+                    android:text="@string/add_three_points" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/players_names_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player3" />
+
+                <TextView
+                    android:id="@+id/player_3_score"
+                    style="@style/players_scores_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/player_score" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add1Point_Player3"
+                    android:text="@string/add_one_point" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add2Points_Player3"
+                    android:text="@string/add_two_points" />
+
+                <Button
+                    style="@style/buttons_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add3Points_Player3"
+                    android:text="@string/add_three_points" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/dividing_lines_style"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                style="@style/buttons_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calculateAndShowResult"
+                android:text="@string/end_game" />
+
+            <TextView
+                android:id="@+id/winner"
+                style="@style/game_result_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Player (score) WINNER" />
+
+            <TextView
+                android:id="@+id/second_place"
+                style="@style/game_result_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Player (score)" />
+
+            <TextView
+                android:id="@+id/third_place"
+                style="@style/game_result_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Player (score)" />
+
+            <Button
+                style="@style/buttons_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:text="@string/reset_game" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

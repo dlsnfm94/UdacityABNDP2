@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ABNDP2byNoorAlMashhadani</string>
+    <string name="game_name">Word Chain</string>
+    <string name="game_description">A word game in which players come up with words that begin with the letter or letters that the previous word ended with. Words with less than 4 letters get 1 point, words with less than 6 letters get 2 points, and words with 6 letters or more get 3 points.</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player_score">0</string>
+    <string name="add_one_point">+1 point</string>
+    <string name="add_two_points">+2 points</string>
+    <string name="add_three_points">+3 points</string>
+    <string name="end_game">End and Show result</string>
+    <string name="reset_game">Reset</string>
+
+</resources>

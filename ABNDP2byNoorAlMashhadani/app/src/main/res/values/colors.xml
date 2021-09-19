@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#FFBB88FF</color>
+    <color name="text_color">#550055</color>
+    <color name="buttons_color">#770077</color>
+    <color name="buttons_text_color">#FFFFFF</color>
+    <color name="lines_color">#330033</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="winner_color">#008000</color>
+    <color name="last_place_color">#FF0000</color>
+</resources>
